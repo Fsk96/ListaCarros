@@ -17,7 +17,7 @@ Projeto em C++ que implementa uma **lista duplamente ligada** para gestão de ca
 - Boas práticas em C++
 
 ## 🛠️ Tecnologias
-- C++17
+- C++
 - g++
 - Git & GitHub
 
