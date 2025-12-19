@@ -1,30 +1,31 @@
-# 🚗 Lista Bidirecional de Carros em C++
+🇵🇹 [Versão em Português](README.pt.md)
 
-Projeto em C++ que implementa uma **lista duplamente ligada** para gestão de carros, funcionando como uma **fila (FIFO)**.
+# 🚗 Doubly Linked List of Cars in C++
 
-## ✨ Funcionalidades
-- Inserção de carros na cauda
-- Remoção de carros da cabeça
-- Listagem direta e inversa
-- Gestão dinâmica de memória
-- Interface por menu em consola
+> Console application in C++ demonstrating a doubly linked list to manage a car queue (academic project).
 
-## 🧠 Conceitos demonstrados
-- Estruturas de dados (listas ligadas)
-- Ponteiros e memória dinâmica
-- Programação orientada a objetos
-- Separação em `.h` e `.cpp`
-- Boas práticas em C++
+## ✨ Features
+- Insert cars at the tail (FIFO)
+- Remove cars from the head
+- Forward and reverse listing
+- Dynamic memory management
+- Interactive console menu
 
-## 🛠️ Tecnologias
-- C++
+## 🧠 Concepts demonstrated
+- Data structures (linked lists)
+- Pointers and dynamic memory
+- Object-oriented programming
+- Header/source file separation
+- Good C++ practices
+
+## 🛠️ Technologies
+- C++17
 - g++
 - Git & GitHub
 
-## ▶️ Como compilar e executar
+## ▶️ Build and Run
 
 ```bash
 g++ src/main.cpp src/ListaCarros.cpp -I include -o lista-carros
 ./lista-carros
-
 
