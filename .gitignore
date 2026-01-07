@@ -1,4 +1,52 @@
+# ---------------------------
+# Arquivos de compilação C++
+# ---------------------------
 *.exe
-*.o
 *.obj
+*.o
+*.out
+*.a
+*.lib
+
+# Pastas de build (caso uses)
+bin/
+build/
+Debug/
+Release/
+
+# ---------------------------
+# Pastas e arquivos de IDE
+# ---------------------------
 .vscode/
+*.user
+*.suo
+*.vcxproj.user
+*.idea/
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+
+# ---------------------------
+# Sistema operacional
+# ---------------------------
+Thumbs.db
+.DS_Store
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+
+# ---------------------------
+# Arquivos temporários
+# ---------------------------
+*.tmp
+*.temp
+
+# ---------------------------
+# Assets temporários (opcional)
+# ---------------------------
+*.gif
+*.png
+*.jpg

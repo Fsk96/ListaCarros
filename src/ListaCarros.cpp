@@ -6,17 +6,21 @@ using namespace std;
 
 ListaCarros::ListaCarros() : head(nullptr), tail(nullptr) {}
 
-ListaCarros::~ListaCarros() {
-    while (!vazia()) {
+ListaCarros::~ListaCarros()
+{
+    while (!vazia())
+    {
         apagarHead();
     }
 }
 
-bool ListaCarros::vazia() const {
+bool ListaCarros::vazia() const
+{
     return head == nullptr;
 }
 
-void ListaCarros::inserirTail() {
+void ListaCarros::inserirTail()
+{
     string mat, mar, mod, mot;
     int a, c;
 
@@ -35,7 +39,7 @@ void ListaCarros::inserirTail() {
     cout << "Aluguer Diario: ";
     cin >> a;
 
-    Carro* novo = new Carro(mat, mar, mod, mot, a, c);
+    Carro *novo = new Carro(mat, mar, mod, mot, a, c);
 
     novo->prev = tail;
     if (!tail)
@@ -46,14 +50,19 @@ void ListaCarros::inserirTail() {
     tail = novo;
 }
 
-void ListaCarros::apagarHead() {
-    if (vazia()) return;
+void ListaCarros::apagarHead()
+{
+    if (vazia())
+        return;
 
-    Carro* aux = head;
+    Carro *aux = head;
 
-    if (head == tail) {
+    if (head == tail)
+    {
         head = tail = nullptr;
-    } else {
+    }
+    else
+    {
         head = head->next;
         head->prev = nullptr;
     }
@@ -61,14 +70,17 @@ void ListaCarros::apagarHead() {
     delete aux;
 }
 
-void ListaCarros::listar() const {
-    if (vazia()) {
+void ListaCarros::listar() const
+{
+    if (vazia())
+    {
         cout << "Lista vazia.\n";
         return;
     }
 
-    Carro* aux = head;
-    while (aux) {
+    Carro *aux = head;
+    while (aux)
+    {
         cout << "Matricula: " << aux->matricula << "\n"
              << "Marca: " << aux->marca << "\n"
              << "Modelo: " << aux->modelo << "\n"
@@ -80,14 +92,17 @@ void ListaCarros::listar() const {
     }
 }
 
-void ListaCarros::listarInverso() const {
-    if (vazia()) {
+void ListaCarros::listarInverso() const
+{
+    if (vazia())
+    {
         cout << "Lista vazia.\n";
         return;
     }
 
-    Carro* aux = tail;
-    while (aux) {
+    Carro *aux = tail;
+    while (aux)
+    {
         cout << "Matricula: " << aux->matricula << "\n"
              << "Marca: " << aux->marca << "\n"
              << "Modelo: " << aux->modelo << "\n"
